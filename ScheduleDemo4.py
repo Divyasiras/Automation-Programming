@@ -3,17 +3,19 @@ import time
 import datetime
 
 def Display():
-    print("jay Ganesh..! ",datetime.datetime.now())  # show current time
+    print("Jay Ganesh..! ", datetime.datetime.now())
 
 def main():
     print("Automation print started")
 
-    schedule.every(10).second.do(Display)
+    # Call Display() every 10 seconds
+    schedule.every(10).seconds.do(Display)
 
     while True:
         schedule.run_pending()
         time.sleep(1)
 
     print("End of automation script")
-if __name__=="__main__":
+
+if __name__ == "__main__":
     main()
