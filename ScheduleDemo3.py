@@ -16,4 +16,4 @@ def main():
 
     print("End of automation script")
 if __name__=="__main__":
-    main
+    main()
